@@ -1,0 +1,39 @@
+package main
+
+import (
+	"github.com/authorized-buyers-marketplace-api/mcp-server/config"
+	"github.com/authorized-buyers-marketplace-api/mcp-server/models"
+	tools_buyers "github.com/authorized-buyers-marketplace-api/mcp-server/tools/buyers"
+)
+
+func GetAll(cfg *config.APIConfig) []models.Tool {
+	return []models.Tool{
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_cancelnegotiationTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_auctionpackages_subscribeclientsTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_auctionpackages_subscribeTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_clients_listTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_clients_createTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_auctionpackages_listTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_sendrfpTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_finalizeddeals_pauseTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_addnoteTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_finalizeddeals_addcreativeTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_clients_users_activateTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_finalizeddeals_setreadytoserveTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_finalizeddeals_resumeTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_publisherprofiles_listTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_publisherprofiles_getTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_deals_patchTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_clients_users_deleteTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_acceptTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_listTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_auctionpackages_unsubscribeclientsTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_clients_users_deactivateTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_auctionpackages_unsubscribeTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_deals_batchupdateTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_finalizeddeals_listTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_proposals_deals_listTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_clients_users_listTool(cfg),
+		tools_buyers.CreateAuthorizedbuyersmarketplace_buyers_clients_users_createTool(cfg),
+	}
+}
